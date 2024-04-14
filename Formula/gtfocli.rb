@@ -5,21 +5,21 @@
 class Gtfocli < Formula
   desc " GTFO Command Line Interface for easy binaries search commands that can be used to bypass local security restrictions in misconfigured systems."
   homepage "https://github.com/cmd-tools/gtfocli"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache License 2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.3/gtfocli_Darwin_arm64.tar.gz"
-      sha256 "5c42fc0b35c09f105a47e66e796a5e7fe43009ed0ec0205938b0542ce9bf19cf"
+    if Hardware::CPU.intel?
+      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.4/gtfocli_Darwin_x86_64.tar.gz"
+      sha256 "b00ca65538f6fb7e722e94ddaaeb7cbeebb2bf79ba9d82915f3264ccaf9c14f7"
 
       def install
         bin.install "gtfocli"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.3/gtfocli_Darwin_x86_64.tar.gz"
-      sha256 "6e0d2fc04a874dde41089f4c408e4c540f34e431895623c09d7645ffaf7b21fb"
+    if Hardware::CPU.arm?
+      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.4/gtfocli_Darwin_arm64.tar.gz"
+      sha256 "1c809b06378f7eb00babbd67808a1b528b26f8bb38360c647d5a71c76a5a2324"
 
       def install
         bin.install "gtfocli"
@@ -28,17 +28,17 @@ class Gtfocli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.3/gtfocli_Linux_arm64.tar.gz"
-      sha256 "e69f57558fc9fa4c3dc32075729340b5f7921119f00a5b1bdf361afbea9a291a"
+    if Hardware::CPU.intel?
+      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.4/gtfocli_Linux_x86_64.tar.gz"
+      sha256 "6da79fdb9f9edaf1413eb5cda2ec008eeb878424401eb624d44a70b6e716676c"
 
       def install
         bin.install "gtfocli"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.3/gtfocli_Linux_x86_64.tar.gz"
-      sha256 "b8f606a94e497939631178e15cb12bd3f5e8001a9b512e14d28ef81376331903"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/cmd-tools/gtfocli/releases/download/0.0.4/gtfocli_Linux_arm64.tar.gz"
+      sha256 "d57802c5f5b2d9ddf38f9dc0cb5815a9e66eca9ae171a6e7674ed5a5586c86ed"
 
       def install
         bin.install "gtfocli"
