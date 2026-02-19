@@ -11,7 +11,7 @@ class AwsCommander < Formula
   on_macos do
     on_intel do
       url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Darwin_x86_64.tar.gz"
-      sha256 "1aceb8afbb119bca69b47e24784a5ff90ea8570571342d8cd6b879e81097099e"
+      sha256 "3453af0d9dfe632c8a4e8a95fed24f17d94564ff6d278e7c8ba08034c2121e0d"
 
       def install
         bin.install "aws-commander"
@@ -19,7 +19,7 @@ class AwsCommander < Formula
     end
     on_arm do
       url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Darwin_arm64.tar.gz"
-      sha256 "20335c982f25459c816c6d4b2831d3bfe9b2abb0292f44e1ce74835e70e4e761"
+      sha256 "c1bd152f795fa1a9ff4dea7372df5fff347de8ba5551f0d2b9d873ad9560499e"
 
       def install
         bin.install "aws-commander"
@@ -31,7 +31,7 @@ class AwsCommander < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Linux_x86_64.tar.gz"
-        sha256 "fc63d6ad296daba51dcdc5c8142d22f91193b0c4148fb323e786714149ead594"
+        sha256 "4b2eff5ba0e48a68837936f968f12fcd7c8d13fc0b870aa773d6003ffbb34b43"
 
         def install
           bin.install "aws-commander"
@@ -41,7 +41,7 @@ class AwsCommander < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Linux_arm64.tar.gz"
-        sha256 "a02353ec9dcd305fdd1111dafdc257a5f02dc4e1e7ea603619662cd23c7f2582"
+        sha256 "a1f44baadc97d41bf93115b6bce3e0176d5329eb33b970af7bb7765f41cb8e5e"
 
         def install
           bin.install "aws-commander"
