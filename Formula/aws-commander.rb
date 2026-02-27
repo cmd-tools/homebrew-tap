@@ -5,21 +5,21 @@
 class AwsCommander < Formula
   desc "TUI application wrapping the AWS CLI for easy browsing and management of AWS resources."
   homepage "https://github.com/cmd-tools/aws-commander"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache License 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Darwin_x86_64.tar.gz"
-      sha256 "3453af0d9dfe632c8a4e8a95fed24f17d94564ff6d278e7c8ba08034c2121e0d"
+      url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.2/aws-commander_Darwin_x86_64.tar.gz"
+      sha256 "5912aeb724bcb7e4f75a4dce18b94167b3412a3d18ab420e504f350cc6744d7a"
 
       def install
         bin.install "aws-commander"
       end
     end
     on_arm do
-      url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Darwin_arm64.tar.gz"
-      sha256 "c1bd152f795fa1a9ff4dea7372df5fff347de8ba5551f0d2b9d873ad9560499e"
+      url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.2/aws-commander_Darwin_arm64.tar.gz"
+      sha256 "30085031b148f941c64c73b61f699abfef828b57d0ec111a62badd97ac52705d"
 
       def install
         bin.install "aws-commander"
@@ -30,8 +30,8 @@ class AwsCommander < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Linux_x86_64.tar.gz"
-        sha256 "4b2eff5ba0e48a68837936f968f12fcd7c8d13fc0b870aa773d6003ffbb34b43"
+        url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.2/aws-commander_Linux_x86_64.tar.gz"
+        sha256 "4cca79db2bb22f751bb7e046fe554680dd0ca9732225f0ba97a1052a691d48b1"
 
         def install
           bin.install "aws-commander"
@@ -40,8 +40,8 @@ class AwsCommander < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.1/aws-commander_Linux_arm64.tar.gz"
-        sha256 "a1f44baadc97d41bf93115b6bce3e0176d5329eb33b970af7bb7765f41cb8e5e"
+        url "https://github.com/cmd-tools/aws-commander/releases/download/0.0.2/aws-commander_Linux_arm64.tar.gz"
+        sha256 "5ab502c4136f931a4a35ce1d57bbce6779d9b1d2199b82e95b2b6fbda6514e6d"
 
         def install
           bin.install "aws-commander"
